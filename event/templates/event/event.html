@@ -1,0 +1,54 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid bg p-5">
+        <h1 class="display-4 text-center p-5">Event Registration</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg bg1 navbar-light">
+        <a class="navbar-brand" href="/events">Event</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/events">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/form">Registration</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <img  src="{% static 'img/image1.jpg' %}">/>
+            </div>
+            <div class="col-6">
+                <h1 class="p-3">College Events</h1>
+                <p class="p-3">To participate in Event
+                    click on the<br> Registration link 
+                    and register <br>
+                    To see the info about Event click<br> on the Events link
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="navb">
+        <h4 class="text-center p-3" >CREATED AND DEVELOPED BY SHERWIN</h4>    
+    </div>
+</body>
+</html>

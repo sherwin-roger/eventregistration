@@ -1,19 +1,3 @@
-# WebApplication for Event Registration
-
-## AIM:
-To create a UX design and develop a web application for event registration.
-
-## DESIGN SCREENS:
-![output](./static/img/Screenshot(208).jpg)
-
-## WIREFRAME:
-![output](./static/img/Screenshot(209).jpg)
-
-## PROTOTYPE:
-![output](./static/img/Screenshot(210).jpg)
-
-## PROGRAM:
-```
 from django.shortcuts import render
 from .models import event,eventAdmin
 # Create your views here.
@@ -53,7 +37,3 @@ def eventAdmin(request):
     result=event.objects.all()
     context["answers"]=result
     return render(request,'event/eventAdmin.html',context)
-```
-
-## RESULT:
-Thus The Event page is created and it is hosted on http://sherwin.student.saveetha.in:8000/home/ 
